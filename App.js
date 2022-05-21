@@ -10,7 +10,7 @@ export default function App() {
 
   return <SafeAreaView style={{ flex: 1 }}>
     <StatusBar />
-    <Home melhoresProdutores={false} />
+    <Home melhoresProdutores={true} />
     {/* {produtores.length > 0 && 
       <Cesta produtor={{
         nome: produtores[0].nome, 
