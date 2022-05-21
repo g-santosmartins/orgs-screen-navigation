@@ -23,14 +23,15 @@ Neste projeto iremos juntar a tela Home e Cesta do e-commerce de produtos natura
 ## 📁 Acesso ao projeto
 
 Você pode acessar as seguintes branches do projeto para navegar entre as aulas e desafios:
-- [Projeto Inicial](https://github.com/alura-cursos/react-native-navegacao-entre-telas) ([baixar o zip](https://github.com/alura-cursos/react-native-navegacao-entre-telas/archive/refs/heads/main.zip))
-- [Aula 1 completa](https://github.com/alura-cursos/react-native-navegacao-entre-telas/tree/Aula1)
+<!-- - [Projeto Inicial](https://github.com/alura-cursos/react-native-navegacao-entre-telas) ([baixar o zip](https://github.com/alura-cursos/react-native-navegacao-entre-telas/archive/refs/heads/main.zip)) -->
+
+<!-- - [Aula 1 completa](https://github.com/alura-cursos/react-native-navegacao-entre-telas/tree/Aula1)
 - [Aula 2 completa](https://github.com/alura-cursos/react-native-navegacao-entre-telas/tree/Aula2)
 - [Aula 3 completa](https://github.com/alura-cursos/react-native-navegacao-entre-telas/tree/Aula3)
 - [Aula 4 completa](https://github.com/alura-cursos/react-native-navegacao-entre-telas/tree/Aula4)
     - [Desafio de tamanho de fonte e icone completo](https://github.com/alura-cursos/react-native-navegacao-entre-telas/tree/DesafioFonte)
 - [Aula 5 completa](https://github.com/alura-cursos/react-native-navegacao-entre-telas/tree/Aula5)
-    - [Desafio de tela de resumo completo](https://github.com/alura-cursos/react-native-navegacao-entre-telas/tree/DesafioResumo)
+    - [Desafio de tela de resumo completo](https://github.com/alura-cursos/react-native-navegacao-entre-telas/tree/DesafioResumo) -->
 
 Além disso, todos os *commits* do curso estão disponíveis a partir [deste link](https://github.com/alura-cursos/react-native-navegacao-entre-telas/commits/DesafioResumo)!
 
