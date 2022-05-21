@@ -27,7 +27,7 @@ export default function Produtores({ melhoresProdutores }) {
     data={lista}
     renderItem={
       ({ item }) => <Produtor {...item} aoPressionar={() => {
-        navigation.navigate('Produtor')
+        navigation.navigate('Produtor', item ) //item as param
       }} />
     }
     keyExtractor={({ nome }) => nome}
