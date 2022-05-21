@@ -3,8 +3,9 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 // Internal imports
-import MelhoresProdutores from '../telas/MelhoresProdutores';
 import ProdutorRotas from './ProdutorRotas';
+import MelhoresProdutoresRotas from './MelhoresProdutoresRotas';
+
 
 const Tab = createBottomTabNavigator();
 
@@ -13,7 +14,7 @@ export default function AppRotas() {
         <NavigationContainer>
             <Tab.Navigator>
                 <Tab.Screen name="Início" component={ProdutorRotas} />
-                <Tab.Screen name="Melhores Produtores" component={MelhoresProdutores} />
+                <Tab.Screen name="Melhores Produtores" component={MelhoresProdutoresRotas} />
             </Tab.Navigator>
         </NavigationContainer>
     )
