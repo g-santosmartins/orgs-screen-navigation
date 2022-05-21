@@ -13,7 +13,7 @@ export default function AppRotas() {
         <NavigationContainer>
             <Tab.Navigator>
                 <Tab.Screen name="Home" component={Home} />
-                <Tab.Screen name="Melhores" component={MelhoresProdutores} />
+                <Tab.Screen name="Melhores Produtores" component={MelhoresProdutores} />
             </Tab.Navigator>
         </NavigationContainer>
     )
