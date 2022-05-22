@@ -37,6 +37,9 @@ export default function Produtores({ melhoresProdutores }) {
         setExibeMensagem(false)
       }, 3000);
     }
+
+    // return useEffect is executed right before the next useEffect
+    return () => clearTimeout(timeout)
   }, [timestampCompra]);
 
 
