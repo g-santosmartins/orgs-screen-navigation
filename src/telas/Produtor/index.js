@@ -1,6 +1,6 @@
 import React from 'react'
 import { useRoute } from '@react-navigation/native'
-import { StyleSheet, FlatList } from 'react-native'
+import { StyleSheet, FlatList, View, Image, Text } from 'react-native'
 import Cesta from './componentes/Cesta'
 import Topo from '../../componentes/Topo'
 import useTextos from '../../hooks/useTextos'
@@ -14,20 +14,30 @@ export default function Produtor() {
 
     const route = useRoute()
 
-    
+
     const { nome, imagem, cestas } = route.params
 
     // text hook
 
-    const {tituloProdutor, tituloCesta} = useTextos()
+    const { tituloProdutor, tituloCestas } = useTextos()
 
 
     // Flatlist header
 
     const TopoLista = () => {
-       return <>
-            <Topo titulo={tituloProdutor} imagem={topo} altura={150}/>
-       </>
+        return <>
+            <Topo titulo={tituloProdutor} imagem={topo} altura={150} />
+            <View style={estilos.conteudo}>
+                <View style={estilos.logo}>
+                    <Image source={imagem} style={estilos.produtorImage} />
+                    <Text style={estilos.produtor}>{nome}</Text>
+                </View>
+
+                <Text style={estilos.cestas}>
+                    {tituloCestas}
+                </Text>
+            </View>
+        </>
     }
 
     // Hook to call the route params from the last screen
