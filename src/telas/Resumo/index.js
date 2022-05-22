@@ -5,6 +5,7 @@ import useTextos from '../../hooks/useTextos';
 
 import VoltarSVG from '../../assets/voltar.svg';
 import sucesso from '../../assets/sucesso.png';
+import { useNavigation, useRoute } from '@react-navigation/native';
 export default function Resumo() {
   const {
     mensagemCompra,
@@ -13,15 +14,19 @@ export default function Resumo() {
     botaoHomeCompra,
     botaoProdutorCompra
   } = useTextos();
-
+  
+  const route = useRoute()
+  const navigation = useNavigation()
   
 
+  const nomeProduto = route.params?.compra.nome
+  const novaMensagem = mensagemCompra?.replace("$NOME", nomeProduto)
   return <View style={estilos.tela}>
     <ScrollView>
     <View style={estilos.topo}>
       <TouchableOpacity
         style={estilos.topoVoltar}
-        onPress={() => { }}
+        onPress={() => {navigation.goBack()}}
       >
         <VoltarSVG />
       </TouchableOpacity>
@@ -34,17 +39,17 @@ export default function Resumo() {
 
       <View style={estilos.textos}>
         <Text style={estilos.titulo}>{tituloCompra}</Text>
-        <Text style={estilos.mensagem}>{mensagemCompra}</Text>
+        <Text style={estilos.mensagem}>{novaMensagem}</Text>
 
         <TouchableOpacity
           style={estilos.botao}
-          onPress={() => {}}>
+          onPress={() => {navigation.popToTop()}}>
           <Text style={estilos.textoBotao}>{botaoHomeCompra}</Text>
         </TouchableOpacity>
 
         <TouchableOpacity
           style={[estilos.botao, estilos.botaoProdutor]}
-          onPress={() => {}}>
+          onPress={() => {navigation.pop(2)}}>
           <Text style={[estilos.textoBotao, estilos.textoBotaoProdutor ]}>{botaoProdutorCompra}</Text>
         </TouchableOpacity>
       </View>
