@@ -24,7 +24,7 @@ export default function Detalhes({ nome, produtor, descricao, preco }) {
       //   index: 0,
       //   routes: [{name: 'Home'}],
       // })}
-      onPress={() => navigation.navigate('HomeScreen',
+      onPress={() => navigation.navigate('Resumo',
         { compra: { nome, timestamp: + new Date() } },
 
       )}

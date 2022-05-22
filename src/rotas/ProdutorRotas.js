@@ -4,6 +4,8 @@ import Produtor from '../telas/Produtor'
 
 import Home from '../telas/Home';
 import Cesta from '../telas/Cesta';
+import Resumo from '../telas/Resumo';
+
 
 
 // calling the constructor of nav Stack component
@@ -13,7 +15,6 @@ export default function ProdutorRotas({ComponentePrincipal = Home }) {
         <Stack.Screen name='HomeScreen' component={ComponentePrincipal} />
         <Stack.Screen name='Produtor' component={Produtor} />
         <Stack.Screen name='Cesta' component={Cesta} />
-
-
+        <Stack.Screen name='Resumo' component={Resumo} />
     </Stack.Navigator>
 }
