@@ -24,7 +24,10 @@ export default function Detalhes({ nome, produtor, descricao, preco }) {
       //   index: 0,
       //   routes: [{name: 'Home'}],
       // })}
-      onPress={() => navigation.navigate('HomeScreen', { compra: { nome } })}
+      onPress={() => navigation.navigate('HomeScreen',
+        { compra: { nome, timestamp: + new Date() } },
+
+      )}
     >
       <Texto style={estilos.textoBotao}>{botaoComprar}</Texto>
     </TouchableOpacity>
