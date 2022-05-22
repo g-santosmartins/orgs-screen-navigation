@@ -4,5 +4,5 @@ import ProdutorRotas from './ProdutorRotas'
 
 
 export default function MelhoresProdutoresRotas() {
-    return <ProdutorRotas componente={MelhoresProdutores}/>
+    return <ProdutorRotas componentePrincipal={MelhoresProdutores}/>
 }
