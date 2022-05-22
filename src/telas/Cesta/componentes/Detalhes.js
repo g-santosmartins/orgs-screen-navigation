@@ -10,23 +10,23 @@ export default function Detalhes({ nome, produtor, descricao, preco }) {
   const { botaoComprar } = useTextos();
 
   return <>
-    <Texto style={estilos.nome}>{ nome }</Texto>
+    <Texto style={estilos.nome}>{nome}</Texto>
     <View style={estilos.fazenda}>
       <Image source={produtor.imagem} style={estilos.imagemFazenda} />
-      <Texto style={estilos.nomeFazenda}>{ produtor.nome }</Texto>
+      <Texto style={estilos.nomeFazenda}>{produtor.nome}</Texto>
     </View>
-    <Texto style={estilos.descricao}>{ descricao }</Texto>
-    <Texto style={estilos.preco}>{ preco }</Texto>
+    <Texto style={estilos.descricao}>{descricao}</Texto>
+    <Texto style={estilos.preco}>{preco}</Texto>
 
-    <TouchableOpacity 
-      style={estilos.botao} 
+    <TouchableOpacity
+      style={estilos.botao}
       // onPress={() => navigation.reset({
       //   index: 0,
       //   routes: [{name: 'Home'}],
       // })}
-      onPress={() => navigation.popToTop()}
-      >
-      <Texto style={estilos.textoBotao}>{ botaoComprar }</Texto>
+      onPress={() => navigation.navigate('HomeScreen', { compra: { nome } })}
+    >
+      <Texto style={estilos.textoBotao}>{botaoComprar}</Texto>
     </TouchableOpacity>
   </>
 }

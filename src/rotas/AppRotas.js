@@ -36,7 +36,7 @@ export default function AppRotas() {
                 },
                 
                 })}> 
-                <Tab.Screen name="Início" component={ProdutorRotas} />
+                <Tab.Screen name="Home" component={ProdutorRotas} />
                 <Tab.Screen name="Melhores Produtores" component={MelhoresProdutoresRotas} />
             </Tab.Navigator>
         </NavigationContainer>
