@@ -8,7 +8,7 @@ import Home from '../telas/Home';
 // calling the constructor of nav Stack component
 const Stack = createNativeStackNavigator()
 export default function ProdutorRotas({ComponentPrincipal = Home }) {
-    return <Stack.Navigator>
+    return <Stack.Navigator screenOptions={{headerShown: false}}>
         <Stack.Screen name='Home' component={ComponentPrincipal} />
         <Stack.Screen name='Produtor' component={Produtor} />
 
