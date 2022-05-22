@@ -31,6 +31,9 @@ export default function AppRotas() {
                 },
                 tabBarActiveTintColor: '#2a9f85',
                 tabBarInactiveTintColor: '#c7c7c7',
+                tabBarLabelStyle: {
+                    fontSize: 15,
+                },
                 
                 })}> 
                 <Tab.Screen name="Início" component={ProdutorRotas} />
